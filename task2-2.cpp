@@ -19,8 +19,6 @@ int main(int argc, char* argv[])
   }
   
   char c;
-  int s;
-  string x;
   while(read(fd,&c,1)>0)
   {
     cout<<c;

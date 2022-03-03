@@ -8,6 +8,10 @@ using namespace std;
 int main(int argc, char* argv[])
 {
   int fd;
+  
+  // Trying to create file, if it's already exists trunc it's size to 0.
+  // Mode for new file = 666.
+  // Getting write only rights.
   if((fd = open("task1.txt", O_WRONLY | O_CREAT | O_TRUNC, 0666))<0)
   {
     cout<<"Unable to open/create file"<<endl;
